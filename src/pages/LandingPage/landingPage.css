@@ -1,0 +1,25 @@
+.landing-page-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 80vh;
+
+}
+
+.text-wrapper{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.para-text{
+    position: relative;
+    top: .6rem;
+    left: 10px;
+}
+
+.join-now-btn{
+    margin: 2rem 0;
+}
+
+
