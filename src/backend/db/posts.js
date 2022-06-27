@@ -10,68 +10,108 @@ export const posts = [
   {
     _id: uuid(),
     content:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "You are never too old to set another goal or to dream a new dream.",
     likes: {
-      likeCount: 0,
+      likeCount: 4,
       likedBy: [],
       dislikedBy: [],
     },
-    username: "adarshbalika",
-    createdAt: formatDate(),
+    username: "adarsh",
+    firstName: "Adarsh",
+    lastName: "Balika",
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655919880/360_F_245349044_TMxmWxPpnSzeuauvvQnuFe03ueXgS57m_luvrax.jpg",
+    createdAt: "2022-01-01T10:55:06+05:30",
     updatedAt: formatDate(),
-    comments: [
-      {
-        _id: uuid(),
-        username: "shubhamsoni",
-        text: "Interesting",
-        votes: {
-          upvotedBy: [],
-          downvotedBy: [],
-        },
-      },
-      {
-        _id: uuid(),
-        username: "sohamshah",
-        text: "Wow!",
-        votes: {
-          upvotedBy: [],
-          downvotedBy: [],
-        },
-      },
-    ],
+    comments: [],
   },
   {
     _id: uuid(),
-    content:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    content: "Learning Redux",
     likes: {
-      likeCount: 0,
+      likeCount: 4,
       likedBy: [],
       dislikedBy: [],
     },
-    username: "shubhamsoni",
-
-    comments: [
-      {
-        _id: uuid(),
-        username: "shubhamsoni",
-        text: "Interesting",
-        votes: {
-          upvotedBy: [],
-          downvotedBy: [],
-        },
-      },
-      {
-        _id: uuid(),
-        username: "sohamshah",
-        text: "Wow!",
-        votes: {
-          upvotedBy: [],
-          downvotedBy: [],
-        },
-      },
-    ],
+    username: "ManpreetSingh",
+    firstName: "Manpreet",
+    lastName: "Singh",
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655920186/avatar_fytaab.jpg",
     createdAt: formatDate(),
     updatedAt: formatDate(),
+    comments: [],
+  },
+
+  {
+    _id: uuid(),
+    content: "Functions are very beautiful in JavaScript",
+    likes: {
+      likeCount: 4,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "ManpreetSingh",
+    firstName: "Manpreet",
+    lastName: "Singh",
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655920186/avatar_fytaab.jpg",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+    comments: [],
+  },
+
+  {
+    _id: uuid(),
+    content: "Faith is love taking the form of aspiration.",
+    likes: {
+      likeCount: 4,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "mark",
+    firstName: "Mark ",
+    lastName: "Zuckerberg",
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655919859/800px-LetterZ.svg_aaosvf.png",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+    comments: [],
+  },
+
+  {
+    _id: uuid(),
+    content: "Technology is best when it brings people together",
+    likes: {
+      likeCount: 4,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "ManpreetSingh",
+    firstName: "Manpreet",
+    lastName: "Singh",
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655920186/avatar_fytaab.jpg",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+    comments: [],
+  },
+
+  {
+    _id: uuid(),
+    content: "It's not a faith in technology. It's faith in people.",
+    likes: {
+      likeCount: 4,
+      likedBy: [],
+      dislikedBy: [],
+    },
+    username: "mark",
+    firstName: "Mark ",
+    lastName: "Zuckerberg",
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655919859/800px-LetterZ.svg_aaosvf.png",
+    createdAt: formatDate(),
+    updatedAt: formatDate(),
+    comments: [],
   },
 ];
