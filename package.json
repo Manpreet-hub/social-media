@@ -9,6 +9,7 @@
     "@mui/base": "^5.0.0-alpha.84",
     "@mui/icons-material": "^5.8.3",
     "@mui/material": "^5.8.3",
+    "@mui/styles": "^5.8.3",
     "@mui/system": "^5.8.3",
     "@reduxjs/toolkit": "^1.8.2",
     "dayjs": "^1.11.2",
@@ -43,5 +44,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3"
   }
 }
