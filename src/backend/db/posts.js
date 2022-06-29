@@ -12,7 +12,7 @@ export const posts = [
     content:
       "You are never too old to set another goal or to dream a new dream.",
     likes: {
-      likeCount: 4,
+      likeCount: 1,
       likedBy: [],
       dislikedBy: [],
     },
@@ -47,7 +47,7 @@ export const posts = [
     _id: uuid(),
     content: "Functions are very beautiful in JavaScript",
     likes: {
-      likeCount: 4,
+      likeCount: 6,
       likedBy: [],
       dislikedBy: [],
     },
@@ -65,7 +65,7 @@ export const posts = [
     _id: uuid(),
     content: "Faith is love taking the form of aspiration.",
     likes: {
-      likeCount: 4,
+      likeCount: 2,
       likedBy: [],
       dislikedBy: [],
     },
@@ -83,7 +83,7 @@ export const posts = [
     _id: uuid(),
     content: "Technology is best when it brings people together",
     likes: {
-      likeCount: 4,
+      likeCount: 3,
       likedBy: [],
       dislikedBy: [],
     },
@@ -101,7 +101,7 @@ export const posts = [
     _id: uuid(),
     content: "It's not a faith in technology. It's faith in people.",
     likes: {
-      likeCount: 4,
+      likeCount: 5,
       likedBy: [],
       dislikedBy: [],
     },
