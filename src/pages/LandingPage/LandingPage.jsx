@@ -1,26 +1,30 @@
-import "./landingPage.css";
 import Button from "@mui/material/Button";
 import { landingPageImg } from "../../assets/images/";
 import { Link } from "react-router-dom";
 
 export const LandingPage = () => {
   return (
-    <div className="landing-page-wrapper">
-      <div className="text-container">
-        <div className="text-wrapper">
-          <h2>FOLLOW</h2>
-          <h5 className="para-md para-text">PEOPLE AROUND THE GLOBE</h5>
+    <div className="flex items-center justify-around flex-wrap h-screen">
+      <div>
+        <div className="flex text-lg pb-9">
+          <h1 className="font-bold">FOLLOW</h1>
+          <h5 className="para-md para-text mt-1 pl-2">
+            PEOPLE AROUND THE GLOBE
+          </h5>
         </div>
-        <div className="text-wrapper">
-          <h2>Connect</h2>
-          <h5 className="para-md para-text">WITH YOUR FRIENDS</h5>
+        <div className="flex text-lg pb-9">
+          <h1 className="font-bold">Connect</h1>
+          <h5 className="para-md para-text mt-1 pl-2">WITH YOUR FRIENDS</h5>
         </div>
-        <div className="text-wrapper">
-          <h2>SHARE </h2> <h5 className="para-md para-text">WHAT YOU THINK</h5>
+        <div className="flex text-lg pb-9">
+          <h1 className="font-bold">SHARE </h1>
+          <h5 className="para-md para-text mt-1 pl-2">WHAT YOU THINK</h5>
         </div>
-        <div className="join-now-btn">
+        <div className="py-8">
           <Link className="link" to="/signup">
-            <Button variant="contained">Join Now</Button>
+            <Button className="w-full " variant="contained">
+              Join Now
+            </Button>
           </Link>
         </div>
 
@@ -28,8 +32,8 @@ export const LandingPage = () => {
           <h2>Already have an account ?</h2>
         </Link>
       </div>
-      <div className="image-container">
-        <img src={landingPageImg} alt="landing-page" />
+      <div className="">
+        <img className="h-5/6 w-full" src={landingPageImg} alt="landing-page" />
       </div>
     </div>
   );

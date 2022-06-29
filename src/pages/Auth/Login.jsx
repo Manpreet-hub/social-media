@@ -1,9 +1,7 @@
-import "./auth.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../../features/";
 import { useState } from "react";
-import { Header } from "../../components";
 export const Login = () => {
   const dispatch = useDispatch();
   const [userInfo, setUserInfo] = useState({
@@ -34,15 +32,14 @@ export const Login = () => {
 
   return (
     <>
-      <Header />
-      <div className="auth-container">
-        <div className="auth-form">
-          <h2 className="txt-header-color txt-center">LOGIN</h2>
-          <form onSubmit={loginHandler}>
-            <label className="label">Username</label>
+      <div className="w-full flex justify-center mt-20">
+        <div className="shadow-2xl text-center w-4/12 px-8">
+          <h2 className="my-4 text-center">LOGIN</h2>
+          <form className="flex flex-col" onSubmit={loginHandler}>
+            <label className="text-left ">Username</label>
             <input
               required
-              className="user-input"
+              className="w-full p-2 border-2 rounded mb-4 "
               type="text"
               name="username"
               value={userInfo.username}
@@ -50,10 +47,10 @@ export const Login = () => {
               onChange={changeHandler}
             />
 
-            <label className="label">Password</label>
+            <label className="text-left">Password</label>
             <input
               required
-              className="user-input"
+              className="w-full p-2 border-2 rounded mb-4 "
               type="password"
               name="password"
               value={userInfo.password}
@@ -62,20 +59,20 @@ export const Login = () => {
             />
 
             <button
-              className="btn-default  btn-primary login-signup-btn"
+              className="border-blue-600  border-2 rounded-md font-bold text-sm p-4 my-4"
               type="submit"
             >
               Login
             </button>
             <button
-              className="btn-default  login-signup-btn"
+              className="bg-blue-600  border-2 rounded-md font-bold text-sm p-4 my-4"
               type="submit"
               onClick={loginAsGuest}
             >
               Login As Guest
             </button>
 
-            <div className="create">
+            <div className="my-4">
               <Link className="link" to="/signup">
                 Create new account 👉
               </Link>

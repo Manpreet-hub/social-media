@@ -5,6 +5,7 @@ import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
 import { store } from "./store/";
 import { Provider } from "react-redux";
+import "./index.css";
 
 // Call make Server
 makeServer();

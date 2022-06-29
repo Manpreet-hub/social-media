@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  /* background: #eee; */
+}
+
+.App {
+  text-align: center;
+}
+
+li{
+  list-style: none;
+}
+
+.link{
+  text-decoration: none
+}
+
+
+

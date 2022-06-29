@@ -1,13 +1,16 @@
-import { useSelector, useDispatch } from "react-redux";
-import { Header } from "../../components";
+import { Header, Sidebar, AsideInfo, AddPost } from "../../components";
 
 export const Home = () => {
-  const authToken = useSelector((state) => state.auth);
-
   return (
-    <div>
+    <>
       <Header />
-      Home
-    </div>
+      <div className="flex justify-end items-center gap-6 sticky  w-full top-14 px-2  py-2 ">
+        <div className="md:flex">
+          <Sidebar />
+          <AddPost />
+          <AsideInfo />
+        </div>
+      </div>
+    </>
   );
 };

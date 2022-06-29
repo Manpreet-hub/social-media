@@ -10,9 +10,11 @@ export const users = [
     _id: uuid(),
     firstName: "Adarsh",
     lastName: "Balika",
-    username: "adarshbalika",
+    username: "AdarshBalika",
     password: "adarshBalika123",
-    createdAt: formatDate(),
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655919880/360_F_245349044_TMxmWxPpnSzeuauvvQnuFe03ueXgS57m_luvrax.jpg",
+    createdAt: "2022-01-01T10:55:06+05:30",
     updatedAt: formatDate(),
   },
   {
@@ -21,7 +23,9 @@ export const users = [
     lastName: "Singh",
     username: "ManpreetSingh",
     password: "Test@123456",
-    createdAt: formatDate(),
+    avatar:
+      "https://res.cloudinary.com/dffedqurw/image/upload/v1655920186/avatar_fytaab.jpg",
+    createdAt: "2022-01-01T10:55:06+05:30",
     updatedAt: formatDate(),
   },
 ];
