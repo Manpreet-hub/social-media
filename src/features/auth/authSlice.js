@@ -39,12 +39,12 @@ export const signUpUser = createAsyncThunk(
 const authSlice = createSlice({
   name: "auth",
   initialState,
-  reducer: {
+  reducers: {
     logoutUser: (state) => {
       state.authToken = "";
       state.authUser = "";
       localStorage.removeItem("token");
-      localStorage.removeItem("user");
+      localStorage.removeItem("authUser");
     },
   },
   extraReducers: {

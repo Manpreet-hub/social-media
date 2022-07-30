@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import {
   LandingPage,
   PageNotFound,
@@ -8,7 +8,19 @@ import {
   Explore,
   Profile,
   Bookmark,
+  SinglePost,
 } from "../pages/";
+import { useSelector, useDispatch } from "react-redux";
+
+const ProtectedRoute = ({ children }) => {
+  const location = useLocation();
+  const { authToken } = useSelector((state) => state.auth);
+  return authToken ? (
+    children
+  ) : (
+    <Navigate to="/login" state={{ from: location }} replace />
+  );
+};
 
 export const Routers = () => {
   return (
@@ -19,9 +31,38 @@ export const Routers = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/explore" element={<Explore />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/bookmark" element={<Bookmark />} />
+        <Route
+          path="/explore"
+          element={
+            <ProtectedRoute>
+              <Explore />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/profile"
+          element={
+            <ProtectedRoute>
+              <Profile />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/bookmark"
+          element={
+            <ProtectedRoute>
+              <Bookmark />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="post/:postId"
+          element={
+            <ProtectedRoute>
+              <SinglePost />
+            </ProtectedRoute>
+          }
+        />
       </Routes>
     </>
   );

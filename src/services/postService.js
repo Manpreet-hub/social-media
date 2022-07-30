@@ -22,7 +22,9 @@ const dislikePostService = (postId, authorization) =>
   axios.post(
     `/api/posts/dislike/${postId}`,
     {},
-    { headers: { authorization } }
+    {
+      headers: { authorization },
+    }
   );
 
 const addBookmarkService = (postId, authorization) =>
